@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script/form.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Personal information</h1>
+    <form>
+        <div id="main">
+            <div id="section">
+                <label>Name as in Identity proof <b>*</b></label><br>
+                <input type="text" id="name" name="name">
+                <div id="error"></div>
+                <label>Father's Name<b>*</b></label><br>
+                <input type="text" id="fathername" name="fathername"><br>
+                <div id="error1"></div>
+
+                <label>Email<b>*</b></label><br>
+                <input type="text" id="email" name="email">
+                <div id="error2"></div>
+
+                <label>Date of Birth<b>*</b></label><br>
+                <input type="text" id="dob" name="dob">
+                <div id="error3"></div>
+
+                <label>Mobile Number<b>*</b></label><br>
+                <input type="text" id="mobilenumber" name="mobilenumber">
+                <div id="error4"></div>
+            </div>
+            <div id="section1">
+                <label>Current address<b>*</b></label><br>
+                <input type="text" placeholder="Adressline 1" id="address1">
+                <div id="error5"></div>
+
+                <input type="text" placeholder="Adressline 2" id="address2"><br>
+                <div id="error6"></div>
+
+                <input type="text" placeholder="city" id="city">
+                <div id="error7"></div>
+
+                <select id="select">
+                    <option>TamilNadu</option>
+                    <option>karnataka</option>
+                    <option>Andhra pradesh</option>
+                    <option>Maharastra</option>
+                </select>
+                <div id="errors"></div>
+
+                <input type="text" id="pincode" placeholder="Zipcode">
+                <div id="error8"></div>
+
+                <label>Permanent address<b>*</b></label>
+                <input type="radio" id="radio" onclick="Checked()"><label>Same as current address</label><br>
+                <input type="text" placeholder="Addressline 1" id="address3">
+                <div id="error9"></div>
+
+                <input type="text" placeholder="Addressline 2" id="address4"><br>
+                <div id="error9"></div>
+
+                <input type="text" placeholder="city" id="city1">
+                <div id="error9"></div>
+
+                <select id="select1">
+                    <option>TamilNadu</option>
+                    <option>karnataka</option>
+                    <option>Andhra pradesh</option>
+                    <option>Maharastra</option>
+                </select>
+                <div id="error9"></div>
+
+                <input type="text" id="pincode1" placeholder="Zipcode">
+                <div id="error9"></div>
+            </div>
+        </div>
+
+        <input type="file" value="upload file">
+        <input type="button" id="btn" value="submit" name="submit" onclick="Validation()">
+    </form>
+
+
+
+
+</body>
+
+</html>
